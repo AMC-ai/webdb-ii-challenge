@@ -16,7 +16,7 @@ exports.up = function (knex) {
             .notNullable()
             .index();
 
-        tbl.integer('milage')
+        tbl.integer('mileage')
             .notNullable()
             .index();
 
@@ -31,5 +31,5 @@ exports.up = function (knex) {
 };
 
 exports.down = function (knex) {
-    return knex.schema.dropTableIfExits('cars');
+    return knex.schema.dropTableIfExists('cars');
 };
